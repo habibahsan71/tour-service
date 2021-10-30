@@ -1,9 +1,9 @@
-# HBK Medical Services is here
+# HBK Tour Planner is here
 
 Description: 
-This is a website about HBK Medical Services.
-we offer best Tecnology and Environment for the Patient.
-With Best Tecnology We Treat Our Patient And Make sure They have best treatment.
+This is a website about HBK Tour Planning.
+we offer best Packages and Places for Our Client and offer them a great tour.
+With best food and accmodation we ensure best services for our Client.
 
 # Live Site WIth Perfect Output
 
@@ -17,3 +17,5 @@ Live Site Link:https://hbk-hospital.web.app/
 - Bootstrap
 - React Routing
 - Firebase Authentication
+- MongoDB
+- Express JS
