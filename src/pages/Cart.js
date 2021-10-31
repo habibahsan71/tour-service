@@ -3,14 +3,14 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useAuth from "../hooks/useAuth.js";
 
-import { NavLink } from "react-router-dom";
+
 import { useHistory } from "react-router-dom";
 
 const Cart = () => {
     const { selectedService, remove, setSelectedService } = useAuth();
     const history = useHistory();
     const totalPrice = selectedService.reduce(
-        (total, service) => total + service.price, 0
+        (total, service) => parseInt(total) + service.price, 0
     );
 
     return (
@@ -35,12 +35,7 @@ const Cart = () => {
                                             <Row>
                                                 <Col sm={8}>
                                                     <div className="d-flex">
-                                                        <NavLink
-                                                            to={`/services/${_id}`}
-                                                            className="btn btn-primary w-100 me-1"
-                                                        >
-                                                            View Details
-                                                        </NavLink>
+
 
                                                         <button
                                                             onClick={() => remove(_id)}

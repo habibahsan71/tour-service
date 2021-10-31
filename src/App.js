@@ -18,6 +18,7 @@ import PrivateRoute from "./route/PrivateRoute.js";
 import Cart from "./pages/Cart.js";
 import AddServices from "./pages/AddServices";
 import ManageServices from "./pages/ManageServices";
+import Update from "./pages/Update";
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
 
             <Route path="/signup">
               <Signup></Signup>
+            </Route>
+            <Route path="/update">
+              <Update></Update>
             </Route>
 
             <Route path="/reset">

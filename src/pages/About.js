@@ -7,23 +7,34 @@ const About = () => {
         <div className='col-md-7 col-sm-12 text-center'>
           <h1>Our <span className="text-primary">Services</span>? </h1>
           <p className="para">
-            medical, surgical, dental, x-ray, ambulance, hospital, professional nursing, and funeral services, and includes the cost of eyeglasses, hearing aids, pharmaceuticals, orthopedics, and prosthetic devices.
-            We Provide all kind of utilities and best facilities.medical, surgical, dental, x-ray, ambulance, hospital, professional nursing, and funeral services, and includes the cost of eyeglasses, hearing aids, pharmaceuticals, orthopedics, and prosthetic devices.
-            We Provide all kind of utilities and best facilities.
+            Tour guides tend to be predominantly social individuals, meaning that they thrive in situations where they can interact with, persuade, or help people. They also tend to be enterprising, which means that they are usually quite natural leaders who thrive at influencing and persuading others. And we Provide the best..
           </p>
         </div>
         <div className='col-12 col-md-4 text-center'>
-          <img className="w-75 rounded " src="https://i.ibb.co/gtcqQdq/1.jpg" alt="healthy food"></img>
+          <img className="w-75 rounded " src="/4.jpg" alt="healthy food"></img>
         </div>
       </div>
       <div className='mt-5 row'>
         <div className='col-md-4 text-center'>
-          <img className="w-75 rounded" src="https://i.ibb.co/jM24fTx/2.jpg" alt="healthy food"></img>
+          <img className="w-75 rounded" src="/02.jpg" alt="healthy food"></img>
         </div>
         <div className='col-md-7 text-center'>
-          <h1>We Provide Best <span className="text-primary">Surgeons</span></h1>
+          <h1>We Provide Best <span className="text-primary">Tour Plans</span></h1>
           <p className="para">
-            The range of home health care services a patient can receive at home is limitless. Depending on the individual patient's situation, care can range from nursing care to specialized medical services, such as laboratory workups. You and your doctor will determine your care plan and services you may need at home.The range of home health care services a patient can receive at home is limitless. Depending on the individual patient's situation, care can range from nursing care to specialized medical services, such as laboratory workups. You and your doctor will determine your care plan and services you may need at home.
+            - Knowledge of the Tour Area.
+            <br />
+            - Ability to Communicate Effectively.
+            <br />
+            - Strong Empathy and Understanding.
+            <br />
+            - Charismatic Personality.
+            <br />
+            - Keen Ability to Improvise and Adapt.
+            <br />
+            - Focuses on Building Rapport.
+            <br />
+            - Engaging Storyteller and Actor.
+
           </p>
         </div>
 

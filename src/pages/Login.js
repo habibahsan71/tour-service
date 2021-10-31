@@ -25,7 +25,7 @@ const Login = () => {
 
     <div className="m-5">
       <div className=" row ">
-        <div className="col-md-4 text-center">
+        <div className="col-md-4 text-center mt-5">
           <img className="w-75" src="./logo.png" alt="" />
         </div>
         <div className="text-center my-4 col-md-6">

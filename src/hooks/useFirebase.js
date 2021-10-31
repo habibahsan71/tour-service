@@ -104,7 +104,7 @@ const useFirebase = () => {
     console.log(email, password);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        setUser(result.user);
+        // setUser(result.user);
         setNameAndImage();
         emailVerify();
         alert("user has been created");

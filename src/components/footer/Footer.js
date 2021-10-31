@@ -15,13 +15,13 @@ const Footer = () => {
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <a href="#!" className="text-white"><i className="fas fa-book fa-fw fa-sm me-2"></i>Our Doctors</a>
+                  <a href="#!" className="text-white"><i className="fas fa-book fa-fw fa-sm me-2"></i>Our Services</a>
                 </li>
                 <li>
                   <a href="#!" className="text-white"><i className="fas fa-book fa-fw fa-sm me-2"></i>Facilities</a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white"><i className="fas fa-user-edit fa-fw fa-sm me-2"></i>Our Medical Equipments</a>
+                  <a href="#!" className="text-white"><i className="fas fa-user-edit fa-fw fa-sm me-2"></i>Our Packages</a>
                 </li>
               </ul>
             </div>
@@ -36,10 +36,10 @@ const Footer = () => {
                   <a href="#!" className="text-white"><i className="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white"><i className="fas fa-backspace fa-fw fa-sm me-2"></i>Medicines</a>
+                  <a href="#!" className="text-white"><i className="fas fa-backspace fa-fw fa-sm me-2"></i>Foods</a>
                 </li>
                 <li>
-                  <a href="#!" className="text-white"><i className="far fa-file-alt fa-fw fa-sm me-2"></i>Ambulance Services</a>
+                  <a href="#!" className="text-white"><i className="far fa-file-alt fa-fw fa-sm me-2"></i>Accomodation Services</a>
                 </li>
                 <li>
                   <a href="#!" className="text-white"><i className="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
@@ -54,7 +54,7 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li>
-                  <a href="#!" className="text-white">HBK Hospital</a>
+                  <a href="#!" className="text-white">HBK Tour Services</a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">123 Street</a>
@@ -91,7 +91,7 @@ const Footer = () => {
 
 
         <p className="text-center m-0 py-3 copyright">
-          Copyright © All Reserved by HBK Medical Services
+          Copyright © All Reserved by HBK Tour Services
         </p>
 
       </footer>

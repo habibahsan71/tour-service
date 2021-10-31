@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import './Service.css';
 
 
 const Service = ({ service }) => {
-  const { _id, img, name, description, price } = service;
+  const { img, name, description, price } = service;
 
   const { addToCart } = useAuth();
 
@@ -27,14 +26,11 @@ const Service = ({ service }) => {
           </Card.Body>
 
           <Card.Body>
-            <NavLink to={`/services/${_id}`} className="btn btn-primary w-50 mx-auto ">
-              View Details
-            </NavLink>
             <button
               onClick={() => addToCart(service)}
               className="btn btn-primary  w-100"
             >
-              Add to Cart
+              Book This Package
             </button>
           </Card.Body>
         </Card>

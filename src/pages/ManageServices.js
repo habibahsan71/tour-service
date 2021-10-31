@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const ManageServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://creepy-mansion-01173.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     });
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/services/${id}`;
+        const url = `https://creepy-mansion-01173.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -25,16 +26,23 @@ const ManageServices = () => {
             })
     }
     return (
-        <div>
-            <h2>Manage data</h2>
-            {
-                services.map(service => <div key={service._id}>
-                    <h3>{service.name}</h3>
-                    <button>Update</button>
-                    <button onClick={() => handleDelete(service._id)}>Delete</button>
+        <div className='d-flex justify-centent-center align-items-center'>
+            <div className='my-5 text-center container'>
+                <h2 className='text-center' >Manage Package data</h2>
+                {
+                    services.map(service => <div className='text-center my-3 border border-dark p-5' key={service._id}>
+                        <img className='w-25 m-1' src={service.img} alt="" />
+                        <h5>{service.name}</h5>
+                        <p> Description: {service.description}</p>
+                        <p>Price: ${service.price}</p>
+                        <NavLink to={`/update/${service._id}`}>
+                            <button className='btn btn-outline-primary me-1'>Update</button>
+                        </NavLink>
+                        <button className='btn btn-outline-primary' onClick={() => handleDelete(service._id)}>Delete</button>
 
-                </div>)
-            }
+                    </div>)
+                }
+            </div>
 
 
 

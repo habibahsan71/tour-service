@@ -13,7 +13,7 @@ const Header = () => {
             <Navbar className="nav-bar" bg="dark" variant="dark" expand="lg" >
                 <Container>
                     <Navbar.Brand as={NavLink} className="text-white d-flex align-items-center" to="/home">
-                        <img className="logo" src="./logo.png" alt="" />
+                        <img className="logo" src="/logo.png" alt="" />
                         <h3 className="title"> <span className='text-primary fw-bold'>HBK</span> Tour Planner</h3>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

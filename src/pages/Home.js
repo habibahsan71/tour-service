@@ -14,36 +14,36 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./12.jpg"
+            src="./12.jpeg"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3 className='text-dark'>Best Surgeons</h3>
-            <p className='text-dark fw-bold'>Best Board with world best surgeons to decide every important decision</p>
+            <h3 className='text-dark'>Best Places</h3>
+            <p className='text-dark fw-bold'>Best Places with world best Services to give Enjoyable Tour</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./14.jpg"
+            src="./14.jpeg"
             alt="Second slide"
           />
 
           <Carousel.Caption>
-            <h3 className='text-dark'>Best Cardiologist</h3>
-            <p className='text-dark fw-bold'>We Have the best Cardiologist from America. and we provide best treatment</p>
+            <h3 className='text-dark'>Best Guides</h3>
+            <p className='text-dark fw-bold'>We Have the best Local Guide. and we provide best Guide</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./11.png"
+            src="./11.jpeg"
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <h3 className='text-dark'>Best Facilities</h3>
-            <p className='text-dark fw-bold'>We Have the best facilities for a patient. and environment matter for patients</p>
+            <p className='text-dark fw-bold'>We Have the best facilities for a Tourist. and Facilities matter for Tourist</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -54,7 +54,7 @@ const Home = () => {
 
           <h1 >Our <span className='text-primary'>Services</span></h1>
           <p className="mb-0">
-            We Provide Best Services around The country with best Success rate
+            We Provide Best Services around The country
           </p>
 
         </div>

@@ -25,7 +25,7 @@ const useCart = () => {
     );
 
     if (isHave) {
-      alert("Package Added To the My Order(CART)");
+      alert("Package Added To the Order");
     } else {
       const newSelection = [...selectedService, service];
       localStorage.setItem("cart", JSON.stringify(newSelection));
