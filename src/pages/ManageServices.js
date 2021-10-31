@@ -34,7 +34,7 @@ const ManageServices = () => {
                         <img className='w-25 m-1' src={service.img} alt="" />
                         <h5>{service.name}</h5>
                         <p> Description: {service.description}</p>
-                        <p>Price: ${service.price}</p>
+                        <p>Price:  ${service.price}</p>
                         <NavLink to={`/update/${service._id}`}>
                             <button className='btn btn-outline-primary me-1'>Update</button>
                         </NavLink>
