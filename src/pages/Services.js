@@ -13,7 +13,7 @@ const Services = () => {
         <h1> Our Provided <span className='text-primary'>Tour</span> Plans</h1>
 
         <p className="mb-0">
-          We offer best tour plan for our client with best accomdation.
+          We offer best tour plan for Our client with best accomdation.
         </p>
       </div>
 
