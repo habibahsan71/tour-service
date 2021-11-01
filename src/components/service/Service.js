@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Card, Col } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import './Service.css';
@@ -6,8 +7,10 @@ import './Service.css';
 
 const Service = ({ service }) => {
   const { img, name, description, price } = service;
-
-  const { addToCart } = useAuth();
+  const { history } = useHistory();
+  const { addToCart, AllContexts } = useAuth();
+  const { user } = AllContexts;
+  const { uid } = user;
 
   return (
     <Col sm={12} md={6} lg={4}>
@@ -27,7 +30,13 @@ const Service = ({ service }) => {
 
           <Card.Body>
             <button
-              onClick={() => addToCart(service)}
+              onClick={() => {
+                if (uid) {
+                  addToCart(service);
+                } else {
+                  history.push("/login");
+                }
+              }}
               className="btn btn-primary  w-100"
             >
               Book This Package

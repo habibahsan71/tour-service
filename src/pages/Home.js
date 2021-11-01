@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Carousel } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../hooks/useAuth.js";
-import Service from "../components/course/Service.js";
+import Service from "../components/service/Service.js";
 import Other from "./Other.js";
 import Specialist from "./Specialist.js";
 

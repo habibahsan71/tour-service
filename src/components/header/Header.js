@@ -49,7 +49,7 @@ const Header = () => {
                                 </>
                             ) : (
                                 <>
-                                    <Nav.Link as={NavLink} to="/orders" className="text-white">
+                                    <Nav.Link as={NavLink} to="/cart" className="text-white">
                                         My Orders
                                     </Nav.Link>
                                     <Nav.Link as={NavLink} to="/addServices" className="text-white">

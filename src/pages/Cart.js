@@ -7,10 +7,12 @@ import useAuth from "../hooks/useAuth.js";
 import { useHistory } from "react-router-dom";
 
 const Cart = () => {
-    const { selectedService, remove, setSelectedService } = useAuth();
+    const { selectedService, remove, setSelectedService, AllContexts } = useAuth();
+    const { user } = AllContexts;
+    const { uid } = user;
     const history = useHistory();
     const totalPrice = selectedService.reduce(
-        (total, service) => parseInt(total) + service.price, 0
+        (total, service) => Number(total) + Number(service.price), 0
     );
 
     return (
@@ -57,10 +59,18 @@ const Cart = () => {
 
                             <button
                                 onClick={() => {
-                                    alert("This for purchasing");
-                                    localStorage.setItem("cart", JSON.stringify([]));
-                                    setSelectedService([]);
-                                    history.push("/home");
+                                    fetch(`https://creepy-mansion-01173.herokuapp.com/purchase/${uid}`, {
+                                        method: 'delete'
+                                    })
+                                        .then(res => res.json()
+                                            .then(data => {
+                                                if (data.deletedCount > 0) {
+                                                    alert("This for purchasing");
+                                                    setSelectedService([]);
+                                                    history.push("/home");
+                                                }
+                                            }))
+
                                 }}
                                 className="btn btn-primary"
                             >

@@ -18,7 +18,8 @@ import PrivateRoute from "./route/PrivateRoute.js";
 import Cart from "./pages/Cart.js";
 import AddServices from "./pages/AddServices";
 import ManageServices from "./pages/ManageServices";
-import Update from "./pages/Update";
+import ManageOrder from "./pages/ManageOrder";
+
 
 function App() {
   return (
@@ -44,12 +45,16 @@ function App() {
               <Contact></Contact>
             </PrivateRoute>
 
-            <Route path="/orders">
+            <PrivateRoute path="/cart">
               <Cart></Cart>
-            </Route>
-            <Route path="/addServices">
+            </PrivateRoute>
+            <PrivateRoute path="/orders">
+              <ManageOrder></ManageOrder>
+            </PrivateRoute>
+
+            <PrivateRoute path="/addServices">
               <AddServices></AddServices>
-            </Route>
+            </PrivateRoute>
 
             <PrivateRoute exact path="/services">
               <Services></Services>
@@ -62,9 +67,7 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-            <Route path="/update">
-              <Update></Update>
-            </Route>
+
 
             <Route path="/reset">
               <Reset></Reset>
@@ -73,7 +76,7 @@ function App() {
               <ManageServices></ManageServices>
             </Route>
 
-            <PrivateRoute path="/services/:serviceId">
+            <PrivateRoute path="/services/:id">
               <Details></Details>
             </PrivateRoute>
 

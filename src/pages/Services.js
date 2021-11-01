@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import useAuth from "../hooks/useAuth.js";
-import Service from "../components/course/Service";
+import Service from "../components/service/Service";
 
 const Services = () => {
   const { services } = useAuth();
